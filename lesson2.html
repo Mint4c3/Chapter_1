@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <title>Lesson 2</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+</head>
+
+<body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <h1>Lesson 2: Prepare Installer</h1>
+                        </a>
+                        <!-- ***** Logo End ***** -->  
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    
+    <div class="main-banner" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="owl-carousel owl-banner">
+                        <div class="item item-2">
+                            <div class="header-text">
+                                <span class="category">Lesson 2</span>
+                                <h2>Preparing Installer</h2>
+                                <p class="text-type-main-banner">This lesson covers the proper preparation for software installation. It includes understanding system requirements, 
+                                    checking software compatibility, and following manufacturer guidelines. Before installation, a bootable USB or DVD must 
+                                    be created, BIOS/UEFI settings configured, and system readiness verified to ensure a smooth setup.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** INTRODUCTORY ACTIVITY START ***** -->
+        <div class="services section" id="services">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <div class="test-container">
+                            <h1>Review from Lesson 1</h1>
+                            <p class="text-type-center" style="padding-left: 170px; padding-right: 170px; font-size: 20px;">
+                                This lesson teaches how to safely build a computer, focusing on identifying components, ensuring compatibility,
+                                following a step-by-step assembly process, and managing cables for a functional system.
+                            </p>
+                            <p class="text-type-center" style="padding-left: 170px; padding-right: 170px; font-size: 20px;">
+                                <strong>Short Exercise: </strong>Write the things you learned from the lesson about “Assemble Computer Hardware”. 
+                                <textarea rows="10" cols="70" style="margin-left: px; margin-right: auto; margin-top: px;"></textarea>
+
+                            </p>
+
+                            <h2>WHAT's IN</h2>
+                            <div class="wp-body">
+                                <h2>Word Search Puzzle</h2>
+                                <div id="puzzle" class="puzzle">
+                                    <div> E S O P Y Z Y E B S A L I B E </div>
+                                    <div> X Z D G M U X E I T A S C O A </div>
+                                    <div> E E L B A T R O P S O J V O T </div>
+                                    <div> C L I V R C Z I R F I G R T E </div>
+                                    <div> U H B A S R L E I C S I D V C </div>
+                                    <div> T L C A G C V L R D B E I D S </div>
+                                    <div> A T A T T I E E I J W R O Y I </div>
+                                    <div> B F W T N O L C G E D I T J D </div>
+                                    <div> L H Y U I L O F R H X T R M T </div>
+                                    <div> E R O G A G N B S U T C A M C </div>
+                                    <div> W R W T O P I A I Z F H P U A </div>
+                                    <div> P I S N K V L D F C B U K A P </div>
+                                    <div> A N R C C F B A Y S E R S J M </div>
+                                    <div> I H A W I N D O W S Q E I V O </div>
+                                    <div> C O M P R E S S E D H G D X C </div>
+                                </div>
+                                <div class="word-list">
+                                    <h3>Word List</h3>
+                                    <ul>
+                                        <li>Boot</li>
+                                        <li>Compressed</li>
+                                        <li>Diskpart</li>
+                                        <li>FlashDrive</li>
+                                        <li>Portable</li>
+                                        <li>Windows</li>
+                                        <li>Bootable</li>
+                                        <li>Digital</li>
+                                        <li>Executable</li>
+                                        <li>Installer</li>
+                                        <li>Rufus</li>
+                                        <li>CompactDisc</li>
+                                        <li>Disc</li>
+                                        <li>Extract</li>
+                                        <li>ISOFile</li>
+                                        <li>Universal</li>
+                                    </ul>
+                                </div>
+                                <script>
+                                    document.addEventListener("DOMContentLoaded", function() {
+                                        document.querySelectorAll("#puzzle div").forEach(row => {
+                                            row.innerHTML = row.textContent.split('').map(letter => `<span>${letter}</span>`).join(' ');
+                                        });
+                                        
+                                        document.querySelectorAll("#puzzle span").forEach(span => {
+                                            span.addEventListener("click", function() {
+                                                this.classList.toggle("selected");
+                                            });
+                                        });
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!-- ***** INTRODUCTORY ACTIVITY END ***** -->
+        
+        <!-- ***** OBJECTIVES START ***** -->
+        <!-- ***** OBJECTIVES END ***** -->
+        
+        <!-- ***** CONTENT START ***** -->
+        <div class="services section" id="">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading"> 
+                        <h1>Objectives</h1>
+                        <div class="content-container">
+                            <p class="content-body-small">
+                                • Demonstrate an understanding of concepts and principles in installing and configuring computer systems.
+                            </p>
+                            <p class="content-body-small">
+                                •   List down the different types of installation.
+                            </p>
+                            <p class="content-body-small">
+                                • Identify software use of bootable devices like USB Flash Drive, CD/DVD & disk partition.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="section-heading"> 
+                        <h1>Learning Content</h1>
+                        <div class="content-container">
+                            <p class="content-body-small">
+                                Creating portable bootable devices in preparation for the installation of Operating System to computer.
+                                In this lesson, you will be able to apply the knowledge and skills on creating portable bootable devices 
+                                in accordance with software manufacturer instruction. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- ***** ***** -->
+        
+        <div class="service section" id="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1 style="font-size: 50px;">LESSON 2</h1>
+                        <div class="section-heading">
+                            <h1 class="content-header">Technical Terms </h1>
+                            <p class="content-body-small">
+                                For better understanding of the lesson, here is the list of words and their meanings. Read and understand them carefully.
+                            </p>
+                            <div class="content-container">
+                                <ol class="content-body-small">
+                                    <li>• <strong>CD</strong> – Compact Disc</li><br>
+                                    <li>• <strong>DVD</strong> – Digital Versatile Disc</li><br>
+                                    <li>• <strong>USB</strong> – Universal Serial Bus </li><br>
+                                    <li>• <strong>OS</strong> – Operating System </li><br>
+                                    <li>• <strong>Flash Drive</strong> – small electronic device containing flash memory that is used for storing data or transferring it to or from the computer, digital camera, etc.</li><br>
+                                    <li>• <strong>Installer</strong> – a piece of software that installs a program in a computer's hard disk </li><br>
+                                    <li>• <strong>FAT32</strong> – File Allocation Table, 32 is a 32-bit version of the FAT file system </li><br>
+                                    <li>• <strong>Diskpart</strong> – a command interpreter helps you manage your computer's drives</li><br>
+                                    <li>• <strong>Boot Device </strong> – devices inside the computer where a user can select to boot from</li><br>
+                                    <li>• <strong>Bootable</strong> – containing the software required to boot a computer</li><br>
+                                    <li>• <strong>Compressed</strong> – squeeze data and files together</li><br>
+                                    <li>• <strong>configuration</strong> – arrangement and settings of a computer system</li><br>
+                                    <li>• <strong>Executable</strong> – program understood by an operating system of a computer</li><br>
+                                    <li>• <strong>Extract</strong> – describe the process of decompressing and moving one or more files in a compressed file</li><br>
+                                    <li>• <strong>ISO file </strong> – computer file that contains the complete contents of a CD, DVD, or other disc or disk</li><br>
+                                    <li>• <strong>Portable Application  </strong> – software product designed to be easily moved from one computing environment to another</li><br>
+                                    <li>• <strong>Rufus  </strong> – program used for creating bootable USB flash drives</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="service section" id="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="section-heading">
+                            <h3 class="content-header">What is a Software Installer?</h3>
+                            <h1 class="content-header-bl">Software Installers</h1>
+                            <p class="content-body-bl" style="font-weight:400;">
+                                An installer is a piece of software used to install software programs on a system. Installers simply software installation by 
+                                providing the user a step-by-step process with the ability to select the desired options. 
+                            </p>
+                            <p class="content-body-bl" style="font-weight:400;"> 
+                                An installation program or installer is a computer program that installs files, such as applications, drivers, or other software 
+                                onto a computer. Some installers are specifically made to install the files they contain; other installers or general-purpose and
+                                work by reading the contents of the software package to be installed.                                    
+                            </p>
+                            <p class="content-body-bl">
+                                <strong>Common Windows Installer File Extension:</strong>
+                                <ol  class="content-body-bl" style="font-weight:400;">
+                                    <li>1. <strong>Executable</strong> – exe</li>
+                                    <li>2. <strong>Microsoft Windows Installation</strong> – msi</li>
+                                    <li>3. <strong>Compressed Zip File</strong> - .zip </li>
+                                    <li>4. <strong>ISO Image</strong> –  </li>
+                                </ol >                               
+                            </p>
+                            <h1 class="content-header-bl">Types of Software Installation</h1>
+                            <div class="content-holder">
+                                <div class="row">
+                                    <div class="">
+                                        <h4 class="text-type-content-header">1. Attended Installation</h4>
+                                    </div>
+                                    <p class="text-type-content">
+                                        The most common form of installation. An installation process usually needs a user who attends it to make choices, such as 
+                                        accepting or declining an end user license agreement (EULA), specifying preferences such as the installation location, supplying 
+                                        passwords or assisting in product activation.
+                                    </p>
+                                    <img  class="content-pic" src="assets/images/lesson-2/1.jpg" alt="Attended Insatallation">
+                                    <a class="pic-ref" href="https://images.app.goo.gl/ubdSvSDcSJnuBdHW8">https://images.app.goo.gl/ubdSvSDcSJnuBdHW8</a>
+                                </div>
+                            </div>
+                            <div class="content-holder">
+                                <div class="row">
+                                    <div class="">
+                                        <h4 class="text-type-content-header">2. Silent Installation</h4>
+                                    </div>
+                                    <p class="text-type-content">
+                                        Does not display messages or windows during its progress. All silent installations are unattended, but not all unattended installations
+                                        are silent. The reason behind a silent installation may be convenience or subterfuge. Malware is almost always installed silently.
+                                    </p>
+                                    <img  class="content-pic" src="assets/images/lesson-2/2.png" alt="Silent Installation">
+                                    <a class="pic-ref" href="https://images.app.goo.gl/gPo8KU15AFqG8TEa9">https://images.app.goo.gl/gPo8KU15AFqG8TEa9</a>
+                                </div>
+                            </div>
+                            <div class="content-holder">
+                                <div class="row">
+                                    <div class="">
+                                        <h4 class="text-type-content-header">3. Unattended Installation</h4>
+                                    </div>
+                                    <p class="text-type-content">
+                                        Performed without user interaction during its progress or with no user present at all. One of the reasons to use this approach is to 
+                                        automate the installation of many systems. An unattended installation either does not require the user to supply anything for has 
+                                        received all necessary input prior to the start of installation.
+                                    </p>
+                                    <img  class="content-pic" src="assets/images/lesson-2/1.jpg" alt="Unattended Insatallation">
+                                    <a class="pic-ref" href="https://images.app.goo.gl/ubdSvSDcSJnuBdHW8">https://images.app.goo.gl/ubdSvSDcSJnuBdHW8</a>
+                                </div>
+                            </div>
+                            <div class="content-holder">
+                                <div class="row">
+                                    <div class="">
+                                        <h4 class="text-type-content-header">4. Headless Installation</h4>
+                                    </div>
+                                    <p class="text-type-content">
+                                        Performed without using a computer monitor connected. In attended forms of headless installation, another machine connects to the target
+                                        machine (for instance via a local area network) and takes over the display output. Since a headless installation does not need a user
+                                        at the location of the target computer, unattended headless installers may be used to install a program on multiple machines at the same time. 
+                                    </p>
+                                    <img  class="content-pic" src="assets/images/lesson-2/3.png" alt="Headless Installation">
+                                    <a class="pic-ref" href="https://images.app.goo.gl/pc2dbBuQ9D8VTEjU9">https://images.app.goo.gl/pc2dbBuQ9D8VTEjU9</a>
+                                </div>
+                            </div>
+                            <div class="content-holder">
+                                <div class="row">
+                                    <div class="">
+                                        <h4 class="text-type-content-header">5. Scheduled or Automated Installation</h4>
+                                    </div>
+                                    <p class="text-type-content">
+                                        Process that runs on a preset time or when a predefined condition transpires, as opposed to an installation process that starts explicitly on 
+                                        a user's command. For instance, a system administrator willing to install a later version of a computer program that is being used can schedule
+                                        that installation to occur when that program is not running. An operating system may automatically install a device driver for a device that the user connects. 
+                                    </p>
+                                    <img  class="content-pic" src="assets/images/lesson-2/4.jpg" alt="Scheduled or Automated Installation">
+                                    <a class="pic-ref" href="https://images.app.goo.gl/fUQMgLSXcu7ahtBN6">https://images.app.goo.gl/fUQMgLSXcu7ahtBN6</a>
+                                </div>
+                            </div>
+                            <div class="content-holder">
+                                <div class="row">
+                                    <div class="">
+                                        <h4 class="text-type-content-header">6. Clean Insatallation</h4>
+                                    </div>
+                                    <p class="text-type-content">
+                                        Done in the absence of any interfering elements such as old versions of the computer program being installed or leftovers from a previous 
+                                        installation. In particular, the clean installation of an operating system is an installation in which the target disk partition is erased 
+                                        before installation. Since the interfering elements are absent, a clean installation may succeed where an unclean installation may fail or 
+                                        may take significantly longer.
+                                    </p>
+                                    <img  class="content-pic" src="assets/images/lesson-2/5.webp" alt="Clean Installation">
+                                    <a class="pic-ref" href="https://images.app.goo.gl/fCaDJEsSP8yusJNYA">https://images.app.goo.gl/fCaDJEsSP8yusJNYA</a>
+                                </div>
+                            </div>
+                            <div class="content-holder">
+                                <div class="row">
+                                    <div class="">
+                                        <h4 class="text-type-content-header">7. Network Installation</h4>
+                                    </div>
+                                    <p class="text-type-content">
+                                        An installation of a program from a shared network resource that may be done by installing a minimal system before proceeding to download 
+                                        further packages over the network. This may simply be a copy of their original media but software publishers which offer site licenses for 
+                                        institutional customers may provide a version intended for installation over a network.
+                                    </p>
+                                    <img  class="content-pic" src="assets/images/lesson-2/6.jpg" alt="Network Installation">
+                                    <a class="pic-ref" href="https://images.app.goo.gl/nCdicq2og6arbNth8">https://images.app.goo.gl/nCdicq2og6arbNth8</a>
+                                </div>
+                            </div>
+                            <!-- PORTABLE INSTALLER SOFTWARE -->
+                            <h1 class="content-header-bl" style="margin-top: 100px;">Portable Installer Software</h1>
+                            <p class="content-body-bl" style="font-weight:400;">
+                                A program that doesn't have any configuration options is also a portable application. A portable application, sometimes also called standalone, 
+                                is a program designed to read and write is configuration settings into an accessible folder in the computer, usually the folder where the portable
+                                application can be found. This makes it easier transfer to the program with the users’ preferences and data between different computers.
+                            </p>
+                            <p class="content-body-bl" style="font-weight:400;">
+                                Like any application, portable applications must be compatible with the computer system hardware and operating system. If we are trying to 
+                                install Windows Operating System on a laptop that that does not have a DVD drive, or you want a portable installation tool that we can use on
+                                a lot of computers, creating a bootable USB Windows installation drive maybe the answer we are looking for.
+                            </p>
+                            
+                            <!-- THE RUFUS APPLICATION -->
+                            <h1 class="content-header-bl" style="margin-top: 100px;">The Rufus Application</h1>
+                            <div class="content-holder">
+                                <div class="row">
+                                    <div class="">
+                                    </div>
+                                    <p class="text-type-content">
+                                        Rufus is a utility that helps format and create bootable USB flash drive, such as USB keys/ pen drives, memory sticks, etc. Rufus is a free utility created by Pete Batard for Microsoft Windows that creates bootable USB flash drives from ISO Image files. Rufus supports Windows version 7 and later.
+                                    </p>
+                                    <img  class="content-pic" src="assets/images/lesson-2/7.png" alt="Rufus">
+                                    <a class="pic-ref" href="https://images.app.goo.gl/NWRwmLDKCB1McB3x7">https://images.app.goo.gl/NWRwmLDKCB1McB3x7</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Bootable USB -->
+                            <h1 class="content-header-bl" style="margin-top: 100px;">What is Bootable USB?</h1>
+                            <div class="content-holder">
+                                <div class="row">
+                                    <div class="">
+                                    </div>
+                                    <p class="text-type-content">
+                                        A “bootable USB” is a regular USB storage device (like a USB stick or external hard drive) that has an “ISO Image” of an operating system saved on it. 
+                                        An “ISO Image” is an archive file that contains all the information found on an optical disc, such as CD or DVD. This could, for example, be a Windows installation CD. 
+                                        Normally, whenever you start up your computer it, boots from the operating system stored on your internal hard drive. By running the bootable USB however, you can boot up your computer using the USB’s ISO image instead. 
+                                        This can be useful if you ever need to recover, repair or install an operating system on your computer
+                                    </p>
+                                    <img  class="content-pic" src="assets/images/lesson-2/8.jpg" alt="Bootable Drive">
+                                    <a class="pic-ref" href="https://images.app.goo.gl/CuR7uMkBT68KYgm39">https://images.app.goo.gl/CuR7uMkBT68KYgm39</a>
+                                </div>
+                            </div>
+                            <div class="content-holder">
+                                <div class="row">
+                                    <div class="">
+                                        <h4 class="text-type-content-header">Boot</h4>
+                                    </div>
+                                    <p class="text-type-content">
+                                        Is to load the first piece of software that starts a computer. Because the operating system is essential for running all other programs, it is usually the first piece of software loaded during the boot process.                                     
+                                    </p>
+                                    <img  class="content-pic" src="assets/images/lesson-2/9.webp" alt="Boot">
+                                    <a class="pic-ref" href="https://images.app.goo.gl/QSXXerTZeUCe2xsX8">https://images.app.goo.gl/QSXXerTZeUCe2xsX8</a>
+                                </div>
+                            </div>
+                            <div class="content-holder" style="margin-top: 100px;">
+                                <div class="row">
+                                    <div class="">
+                                        <h4 class="text-type-content-header">Storage Media</h4>
+                                    </div>
+                                    <p class="text-type-content">
+                                        A device for recording (storing) information (data).
+                                    </p>
+                                    <img  class="content-pic" src="assets/images/lesson-2/10.jfif" alt="Storage Media">
+                                    <a class="pic-ref" href="https://images.app.goo.gl/nF3SunHNQ5uKi5AG6">https://images.app.goo.gl/nF3SunHNQ5uKi5AG6</a>
+                                </div>
+                            </div>
+                            <div class="content-holder" style="margin-top: 100px;">
+                                <div class="row">
+                                    <div class="">
+                                        <h4 class="text-type-content-header">Bootable Device/Bootable Media</h4>
+                                    </div>
+                                    <p class="text-type-content">
+                                        Is a physical media (CD, DVD, USB Flash Drive or other removable media supported by machine BIOS as a boot device) that boots on any PC-compatible machine.
+                                    </p>
+                                    <img  class="content-pic" src="assets/images/lesson-2/11.webp" alt="Bootable Device">
+                                    <a class="pic-ref" href="https://images.app.goo.gl/ZGK6Ag28EVvtTNRs5">https://images.app.goo.gl/ZGK6Ag28EVvtTNRs5</a>
+                                </div>
+                            </div>
+                            <div class="content-holder" style="margin-top: 100px;">
+                                <div class="row">
+                                    <div class="">
+                                        <h4 class="text-type-content-header">Bootable media is nmost often used to:</h4>
+                                    </div>
+                                    <ol  class="text-type-content" style="margin-top: 30px;">
+                                        <li>• Recover an operating system that cannot start</li>
+                                        <li>• Access nd backup the data that has survived in corruptes system</li>
+                                        <li>• Backup sector-by-sector a disk with an unsupported file system</li>
+                                        <li>• Hardware or Software Troubleshooting</li>
+                                    </ol >   
+                                </div>
+                            </div>
+                            <!-- PROCESS OF BOOTING -->
+                            <h1 class="content-header-bl"  style="margin-top: 100px;">The Process of Booting</h1>
+                            <p class="content-body-bl" style="font-weight:400;">
+                                The term boot comes from the idea of lifting oneself by one's own bootstraps: to computer contains a tiny program (bootstrap loader) which
+                                will load and run a program found on a boot device.
+                            </p>
+                            <h1 class="content-header-bl"  style="margin-top: 100px;"> Cold Boot VS. Warm Boot</h1>
+                            <div class="content-holder" style="margin-top: 100px;">
+                                <div class="row">
+                                    <div class="">
+                                        <h4 class="text-type-content-header"> Cold Boot</h4>
+                                    </div>
+                                    <p class="text-type-content">
+                                        (also called a "hard boot") means start up a computer that is turned off. It is typically performed by pressing the power button on the computer.  
+                                    </p>
+                                    <div class="">
+                                        <h4 class="text-type-content-header"> Warm Boot</h4>
+                                    </div>
+                                    <p class="text-type-content">
+                                        (also called a “soft boot”) means to restart a computer. It is typically initiated from the operating system, rather than pressing a button on the computer itself.                                    </p>
+                                        <img  class="content-pic" src="assets/images/lesson-2/12.png" alt="Cold / Warm Boot">
+                                        <a class="pic-ref" href="https://images.app.goo.gl/hpJETpvs92r9nt7d8">https://images.app.goo.gl/hpJETpvs92r9nt7d8</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder" style="margin-top: 100px;">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">Unified Extensible Firmware Interface (UEFI)</h4>
+                                        </div>
+                                        <ol  class="text-type-content" style="margin-top: 30px;">
+                                            <li>•	A specification for a software program that connects a computer's firmware to its operating system.</li>
+                                            <li>•	UEFI is expected to replace BIOS eventually.</li>
+                                            <li>•	It is installed at the manufacturing time and is the first program that runs when a computer is turned on </li>
+                                            <li>•	It checks to see what hardware components the computing device has, wakes the components, and hands them over to the operating system.</li>
+                                        </ol >   
+                                        <img  class="content-pic" src="assets/images/lesson-2/13.avif" alt="UEFI">
+                                        <a class="pic-ref" href="https://images.app.goo.gl/swKtXbkVzVdt8snf6">https://images.app.goo.gl/swKtXbkVzVdt8snf6</a>
+                                    </div>
+                                </div>
+                                <!-- TYPES OF WINDOWS FILE SYSTEM -->
+                                <h1 class="content-header-bl"  style="margin-top: 100px;">2 Types of Windows File System</h1>
+                                <div class="content-holder" style="margin-top: 100px;">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">1. File Allocation Table (FAT)</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            A table that an operating system maintains on a hard disk drive which provides a map of the clusters that a file has been stored.                                    
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/lesson-2/14.png" alt="">
+                                        <a class="pic-ref" href="https://images.app.goo.gl/hfh1rv1hJbMhfb4g9">https://images.app.goo.gl/hfh1rv1hJbMhfb4g9</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder" style="margin-top: 100px;">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">2. NTFS (NT File System sometimes New Technology File System)</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            A file system that the windows NT operating system uses to store and retrieve files on a hard disk.
+                                        </p>
+                                        <p class="text-type-content">
+                                            NTFS is the windows NT equivalent of the windows 95 file allocation table (FAT) and the OS/2 High-Performance File System (HPFS).
+                                        </p>
+                                        <p class="text-type-content">
+                                            However, NTFS offer some improvements over FAT and HPFS in terms of performance, extendibility, and security.
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/lesson-2/15.png" alt="NFTS">
+                                        <a class="pic-ref" href="https://images.app.goo.gl/4Exggugku9s5zHik9">https://images.app.goo.gl/4Exggugku9s5zHik9</a>
+                                    </div>
+                                </div>
+
+                                <!-- TYPES OF PARTITION TABLE FORMATS -->
+                                <div class="content-holder" style="margin-top: 100px;">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">2 Types of Partition Table Formats</h4>
+                                        </div>
+                                        <ol  class="text-type-content" style="margin-top: 30px;">
+                                            <li>•	<strong>MBR</strong> (Master Boot Record)</li>
+                                            <li>•	<strong>GPT</strong> (GUID Partition Table)</li>
+                                        </ol >   
+                                    </div>
+                                </div>
+                                <div class="content-holder" style="margin-top: 100px;">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">Master Boot Record</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            This has been in used since the early 1980s and is widely supported. However, it is limited to a maximum of four primary 
+                                            partitions with up to 2TB, a size that's easily exceeded by many large hard drives available today.                                    
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/lesson-2/16.jfif" alt="Master Boot Record">
+                                        <a class="pic-ref" href="https://images.app.goo.gl/FoFpuYGZxMgTywb17">https://images.app.goo.gl/FoFpuYGZxMgTywb17</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder" style="margin-top: 100px;">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">GUID Partition Table</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            A newer technology which allows much larger disk to be used up to a theoretical limit of 9.4 zettabytes (ZB) or nearly 10 billion terabytes (TB).                                     
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/lesson-2/17.svg" alt="GUID Partition Table">
+                                        <a class="pic-ref" href="https://images.app.goo.gl/UhCpDFzQF2jv9QkR6">https://images.app.goo.gl/UhCpDFzQF2jv9QkR6</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** CONTENT END ***** -->
+            
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+            
+            <div class="button-container">
+                <div class="main-button-a">
+                    <a href="index.html"><i class="fas fa-arrow-left"></i> Back</a>
+                </div> 
+                
+                <div class="main-button-b">
+                    <a href="lesson2-activity.html">Next <i class="fas fa-arrow-right"></i></a>
+                </div> 
+            </div>
+            
+            <footer>
+                <div class="container">
+                    <div class="col-lg-12">
+                        <p>Copyright © 2025 Technological University of the Philippines - Taguig. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a href="https://templatemo.com" rel="nofollow" target="_blank">TemplateMo</a></p>
+                    </div>
+                </div>
+            </footer>
+            
+            
+            
+            <!-- Scripts -->
+            <!-- Bootstrap core JavaScript -->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+            <script src="assets/js/isotope.min.js"></script>
+            <script src="assets/js/owl-carousel.js"></script>
+            <script src="assets/js/counter.js"></script>
+            <script src="assets/js/custom.js"></script>
+            
+        </body>
+        </html>

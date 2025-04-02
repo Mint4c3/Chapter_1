@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <title>Lesson 3</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-scholar-l3.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+</head>
+
+<body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo" st>
+                            <h1>Lesson 3: Install Operating System and Drivers for Peripherals/Devices</h1>
+                        </a>
+                        <!-- ***** Logo End ***** -->  
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    
+    <div class="main-banner" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="owl-carousel owl-banner">
+                        <div class="item item-3">
+                            <div class="header-text">
+                                <span class="category">Lesson 3</span>
+                                <h2>Install Operating System And Drivers for Peripherals/Devices</h2>
+                                <p class="text-type-main-banner">This lesson covers installing an operating system and drivers for peripherals. It begins with understanding the boot process 
+                                    and configuring boot options in BIOS/UEFI. The installation process includes setting up Windows or Linux, configuring language, 
+                                    network, and system settings, and ensuring hardware compatibility by installing the necessary drivers.</p>
+                                    <div class="buttons">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** INTRODUCTORY ACTIVITY START ***** -->
+        <div class="services section" id="services">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <div class="test-container">
+                            <h1>REVIEW</h1>
+                            <p class="content-body-small">
+                                <strong>Instruction:</strong> Answer the following questions based on what you learned in the previous lesson. Write your answers on your notebook or a separate sheet of paper.
+                                <ul class="content-ul-2" style="font-size: 20px; margin-top: 10px;">
+                                    <li>1.	List three essential tools needed to create a bootable USB. </li>
+                                    <li>2.	Explain in 2-3 sentences the difference between an attended and unattended installation. </li>
+                                    <li>3.	What step should you take if your computer does not detect the bootable USB during startup?</li>
+                                </ul>
+                            </p>
+                            <div class="content-body-small">
+                                <h2 class="checklist-h2" style="margin-top: 50px;">wHAT'S IN</h2>
+                                <p class="content-body-small">
+                                    <strong>Instruction:</strong> Choose the best answer for each question.
+                                </p>
+                                <div class="test-container">
+                                    <div>
+                                        <div class="test-question">
+                                            1. Before installing an OS, which of the following should you check first?                                      
+                                            <div class="row">
+                                                <label for="a1" style="font-size: 20;">
+                                                    <input class="test-checkbox" type="radio" id="a1" name="assessment1" value="a1">
+                                                    A. Available wallpapers
+                                                </label>
+                                                <label for="b1" style="font-size: 20;">
+                                                    <input class="test-checkbox" type="radio" id="b1" name="assessment1" value="b1">
+                                                    B.  System requirements
+                                                </label>
+                                                <label for="c1" style="font-size: 20;">
+                                                    <input class="test-checkbox" type="radio" id="c1" name="assessment1" value="c1">
+                                                    C. Number of USB ports
+                                                </label>
+                                                <label for="d1" style="font-size: 20;">
+                                                    <input class="test-checkbox" type="radio" id="d1" name="assessment1" value="d1">
+                                                    D.  Printer connection
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="test-question">
+                                            2. Which file format is commonly used to install an operating system?                                      
+                                            <div class="row">
+                                                <label for="a2" style="font-size: 20;">
+                                                    <input class="test-checkbox" type="radio" id="a2" name="assessment2" value="a2">
+                                                    A. .exe
+                                                </label>
+                                                <label for="b2" style="font-size: 20;">
+                                                    <input class="test-checkbox" type="radio" id="b2" name="assessment2" value="b2">
+                                                    B.  .zip
+                                                </label>
+                                                <label for="c2" style="font-size: 20;">
+                                                    <input class="test-checkbox" type="radio" id="c2" name="assessment2" value="c2">
+                                                    C. .iso
+                                                </label>
+                                                <label for="d2" style="font-size: 20;">
+                                                    <input class="test-checkbox" type="radio" id="d2" name="assessment2" value="d2">
+                                                    D.  .txt
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="test-question">
+                                            3. What is the purpose of device drivers?                                     
+                                            <div class="row">
+                                                <label for="a3" style="font-size: 20;">
+                                                    <input class="test-checkbox" type="radio" id="a3" name="assessment3" value="a3">
+                                                    A.  To speed up internet connection
+                                                </label>
+                                                <label for="b3" style="font-size: 20;">
+                                                    <input class="test-checkbox" type="radio" id="b3" name="assessment3" value="b3">
+                                                    B.  To help hardware communicate with the operating system
+                                                </label>
+                                                <label for="c3" style="font-size: 20;">
+                                                    <input class="test-checkbox" type="radio" id="c3" name="assessment3" value="c3">
+                                                    C.  To protect against viruses
+                                                </label>
+                                                <label for="d3" style="font-size: 20;">
+                                                    <input class="test-checkbox" type="radio" id="d3" name="assessment3" value="d3">
+                                                    D.  To change desktop themes
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="test-question">
+                                            4. Which tool is commonly used to create a bootable USB for OS installation?                                      
+                                            <div class="row">
+                                                <label for="a4" style="font-size: 20;">
+                                                    <input class="test-checkbox" type="radio" id="a4" name="assessment4" value="a4">
+                                                    A.  VLC Media Player
+                                                </label>
+                                                <label for="b4" style="font-size: 20;">
+                                                    <input class="test-checkbox" type="radio" id="b4" name="assessment4" value="b4">
+                                                    B.  Rufus
+                                                </label>
+                                                <label for="c4" style="font-size: 20;">
+                                                    <input class="test-checkbox" type="radio" id="c4" name="assessment4" value="c4">
+                                                    C.  Microsoft Word
+                                                </label>
+                                                <label for="d4" style="font-size: 20;">
+                                                    <input class="test-checkbox" type="radio" id="d4" name="assessment4" value="d4">
+                                                    D.  Task Manager
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="test-question">
+                                            5. Which of these is NOT a step in installing an operating system?
+                                            <div class="row">
+                                                <label for="a5" style="font-size: 20;">
+                                                    <input class="test-checkbox" type="radio" id="a5" name="assessment5" value="a5">
+                                                    A.  Formatting the hard drive
+                                                </label>
+                                                <label for="b5" style="font-size: 20;">
+                                                    <input class="test-checkbox" type="radio" id="b5" name="assessment5" value="b5">
+                                                    B. Choosing installation settings
+                                                </label>
+                                                <label for="c5" style="font-size: 20;">
+                                                    <input class="test-checkbox" type="radio" id="c5" name="assessment5" value="c5">
+                                                    C.  Installing necessary drivers              
+                                                </label>
+                                                <label for="d5" style="font-size: 20;">
+                                                    <input class="test-checkbox" type="radio" id="d5" name="assessment5" value="d5">
+                                                    D.  Changing the mouse sensitivity             
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!-- ***** INTRODUCTORY ACTIVITY END ***** -->
+    
+    <!-- ***** OBJECTIVES START ***** -->
+    <!-- ***** OBJECTIVES END ***** -->
+    
+    <!-- ***** CONTENT START ***** -->
+    <div class="services section" id="">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="section-heading"> 
+                    <h1>Objectives</h1>
+                    <div class="content-container">
+                        <p class="content-body-small">
+                            •	Identify the steps involved in installing an operating system and peripheral device drivers.                            
+                        </p>
+                        <p class="content-body-small">
+                            •	Demonstrate responsibility by following proper procedures to prevent system errors and data loss.
+                        </p>
+                        <p class="content-body-small">
+                            •	Perform the step-by-step installation of an operating system (Windows/Linux) following best practices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- ***** ***** -->
+    
+    <div class="service section" id="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 style="font-size: 50px;">LESSON 3</h1>
+                    <div class="section-heading">
+                        <h3 class="content-header">WHAT IS IT</h3><br>
+                        <h1 class="content-header-bl">What is Operating System?</h1>
+                        <p class="content-body-bl">
+                            <strong>Operating System</strong> (OS) is the software that manages computer hardware 
+                            and software resources, providing common services for applications. Installing an OS 
+                            involves setting up the system’s boot process, preparing storage devices, and ensuring 
+                            all peripherals function properly by installing drivers.
+                        </p>
+                        <h1 class="content-header-bl" style="margin-top: 15px;">What is Boot System?</h1>
+                        <p class="content-body-bl">
+                            <strong>Boot  System</strong> is the process that starts a computer and loads the operating 
+                            system into memory. The boot process initializes hardware components and prepares the system 
+                            for user interaction. Creating your group’s concept paper, the next part is 
+                            to create a Facebook page for your social campaign out of that concept paper.
+                        </p>
+                        <h1 class="content-header-bl" style="margin-top: 15px;">How Boot System works?</h1>
+                        <div class="content-body-bl">
+                            <ul class="content-ul">
+                                <li>•	The computer is powered on, and the BIOS/UEFI firmware initializes.</li>
+                                <li>•	The firmware performs a Power-On Self-Test (POST) to check hardware integrity</li>
+                                <li>•	The bootloader searches for the operating system in storage devices.</li>
+                                <li>•	The OS is loaded into memory, and system processes begin.</li>
+                            </ul>
+                        </div>
+                        <h1 class="content-header-bl" style="margin-top: 15px;">Importance of Boot System</h1>
+                        <div class="content-body-bl">
+                            <ul class="content-ul">
+                                <li>•	Ensures hardware components are functioning properly before the OS loads.</li>
+                                <li>•	Allows users to configure boot priorities through BIOS/UEFI settings.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="service section" id="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h3 class="content-header">Partition and Formatting</h3>
+                        <p class="content-body-bl">
+                            <strong>Partitioning</strong> is the process of dividing a storage device into separate sections, called partitions, to manage data efficiently.
+                            <strong>Formating</strong> prepares a partition by creating a file system that allows the OS to store data.
+                        </p>
+                        <p class="content-body-bl">
+                            <strong>Importance of Partition and Formatting</strong>
+                            <ol  class="content-body-bl">
+                                <li>•	Ensures proper storage allocation and organization.</li>
+                                <li>•	Required for installing an OS on a new or unformatted disk.</li>
+                            </ol >                               
+                        </p>
+                        
+                        <h1 class="content-header-bl">Common File Systems:</h1>
+                        <ol  class="content-body-bl">
+                            <li>1.	<strong>NFTS</strong> (Windows) – Supports large files and security features.</li>
+                            <li>2. <strong>EXT4</strong> (Linux) – Optimized for Linux systems, provides fast access.</li>
+                            <li>3.	<strong>FAT32</strong> – Compatible with multiple operating systems but has file size limitations.</li>
+                        </ol >
+                        
+                        <h1 class="content-header-bl">Step-by-step:</h1>
+                        <ol  class="content-body-bl">
+                            <li>1.	Open the OS installation setup and choose "Custom Installation."</li>
+                            <li>2.	Select the storage drive where the OS will be installed.</li>
+                            <li>3.	Create a new partition by specifying the size and selecting the file system (NTFS for Windows, EXT4 for Linux)</li>
+                            <li>4.	Format the newly created partition to prepare it for installation.</li>
+                            <li>5.	Confirm the partition settings and proceed with OS installation.</li>
+                        </ol >
+                        
+                        <h1 class="content-header-bl" style="margin-top: 50px; font-size: 30px;">Installation of Opearting System</h1>
+                        <div>
+                            <div class="content-holder">
+                                <h4 class="text-type-content-header">Windows Installation</h4>
+                            </div>
+                            <ol  class="content-body-bl">
+                                <li>1.	Insert a bootable USB/DVD and start the computer.</li>
+                                <li>2.	Configure BIOS/UEFI to boot from the installation media.</li>
+                                <li>3.	Select language, time, and keyboard settings.</li>
+                                <li>4.	Choose "Install Now" and enter the product key (if applicable).</li>
+                                <li>5.	Select "Custom Installation," partition the drive, and format it.</li>
+                                <li>6.	Follow the prompts and wait for installation completion. </li>
+                                <li>7.	Configure user accounts, network settings, and privacy preferences.</li>
+                            </ol >
+                        </div>
+                        <div>
+                            <div class="content-holder">
+                                <h4 class="text-type-content-header">Linux Installation</h4>
+                            </div>
+                            <ol  class="content-body-bl">
+                                <li>1.	Boot from a Linux USB/DVD installer.</li>
+                                <li>2.	 Choose "Try Linux" or "Install Linux."</li>
+                                <li>3.	 Select the installation type (Erase disk, Dual Boot, or Manual Partitioning).</li>
+                                <li>4.	Configure partitions and set up a root password.</li>
+                                <li>5.	Follow on-screen instructions and restart after installation.</li>
+                            </ol >
+                        </div>
+                        
+                        <h1 class="content-header-bl">Post-Installation Task</h1>
+                        <p class="content-body-bl">
+                            After installing the operating system, several steps must be completed to ensure the system runs smoothly and all hardware components function properly.
+                        </p>
+                        <ol  class="content-body-bl">
+                            <li>1. <strong>Install Device Drivers</strong> - Ensure all necessary drivers for the motherboard, graphics card, sound, network, and peripherals (e.g., printers, scanners) are installed and updated.</li>
+                            <li>2. <strong>Run System Updates</strong> – Check for and install any available updates to fix bugs, improve security, and enhance performance.</li>
+                            <li>3. <strong>Configure System Setting</strong> – Adjust display resolution, sound settings, power options, and network configurations according to user preferences.</li>
+                            <li>4. <strong>Install Essential Software</strong> – Set up commonly used applications such as browsers, office tools, and security software.</li>
+                            <li>5. <strong>Create a System Backup</strong>– Set up restore points or backup the system to prevent data loss in case of failure.</li>
+                        </ol >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** CONTENT END ***** -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <div class="button-container">
+        <div class="main-button-a">
+            <a href="index.html"><i class="fas fa-arrow-left"></i> Back</a>
+        </div> 
+        
+        <div class="main-button-b">
+            <a href="lesson3-activity.html">Next <i class="fas fa-arrow-right"></i></a>
+        </div> 
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="col-lg-12">
+                <p>Copyright © 2025 Technological University of the Philippines - Taguig. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a href="https://templatemo.com" rel="nofollow" target="_blank">TemplateMo</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/custom.js"></script>
+    
+</body>
+</html>

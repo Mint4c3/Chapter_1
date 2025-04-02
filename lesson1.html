@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <title>Lesson 1</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+</head>
+
+<body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <h1>Lesson 1: Assemble Computer System</h1>
+                        </a>
+                        <!-- ***** Logo End ***** -->  
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    
+    <div class="main-banner" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="owl-carousel owl-banner">
+                        <div class="item item-1">
+                            <div class="header-text">
+                                <span class="category">Lesson 1</span>
+                                <h2>Assemble Computer Hardware</h2>
+                                <p class="text-type-main-banner">This lesson covers the proper assembly of computer hardware, including safety measures. It highlights key components such as the motherboard, 
+                                    processor, RAM, power supply, storage devices, and input/output devices, ensuring compatibility and functionality. 
+                                    The step-by-step process involves installing the motherboard, CPU, RAM, and storage, connecting the power supply and peripherals, and securing 
+                                    cables for a stable system.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ***** INTRODUCTORY ACTIVITY START ***** -->
+        <div class="services section" id="services">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading"> 
+                        <h1>What I Know?</h1>
+                        <div class="test-container">
+                            <p class="text-type-center">
+                                Before we dive into the lessons, let's check what you already know about computer hardware components! This activity will help you 
+                                assess your prior knowledge and prepare you for the topics ahead. Read the descriptions below and write the correct hardware component in the blank.
+                            </p>
+                            <p class="text-type-test-header">
+                                <strong>Directions:</strong> Read the descriptions and write the correct hardware component in the blank.
+                            </p>
+                            <div class="test-question">
+                                1. I am the brain of the computer. I process all instructions and execute commands. What am I? 
+                                <input class="test-input" type="text" id="q1" required>
+                                <span id="q1-answer" class="correct-answer">Correct answer: CPU</span>
+                            </div>
+                            <div class="test-question">
+                                2. I temporarily store data and help your computer run multiple applications at once. What am I? 
+                                <input class="test-input" type="text" id="q2" required>
+                                <span id="q2-answer" class="correct-answer">Correct answer: RAM</span>
+                            </div>
+                            <div class="test-question">
+                                3. I provide power to all components inside the computer. Without me, nothing works! What am I? 
+                                <input class="test-input" type="text" id="q3" required>
+                                <span id="q3-answer" class="correct-answer">Correct answer: Power Supply</span>
+                            </div>
+                            <div class="test-question">
+                                4. I am where your operating system and files are permanently stored. What am I? 
+                                <input class="test-input" type="text" id="q4" required>
+                                <span id="q4-answer" class="correct-answer">Correct answer: Hard Drive</span>
+                            </div>
+                            <div class="test-question">
+                                5. I connect all the components together and allow communication between them. What am I? 
+                                <input class="test-input" type="text" id="q5" required>
+                                <span id="q5-answer" class="correct-answer">Correct answer: Motherboard</span>
+                            </div>
+                            
+                            <button class="test-button" onclick="checkAnswers()">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function checkAnswers() {
+                const answers = {
+                    q1: "CPU",
+                    q2: "RAM",
+                    q3: "Power Supply",
+                    q4: "Hard Drive",
+                    q5: "Motherboard"
+                };
+                
+                for (let key in answers) {
+                    const inputField = document.getElementById(key);
+                    const correctAnswer = answers[key].toLowerCase();
+                    const userAnswer = inputField.value.trim().toLowerCase();
+                    const answerDisplay = document.getElementById(key + "-answer");
+                    
+                    if (userAnswer === correctAnswer) {
+                        inputField.classList.add("correct");
+                        inputField.classList.remove("incorrect");
+                        answerDisplay.style.display = "none"; // Hide the correct answer if it's right
+                    } else {
+                        inputField.classList.add("incorrect");
+                        inputField.classList.remove("correct");
+                        answerDisplay.style.display = "block"; // Show the correct answer if wrong
+                    }
+                }
+            }
+        </script>
+        <!-- ***** INTRODUCTORY ACTIVITY END ***** -->
+        
+        <!-- ***** OBJECTIVES START ***** -->
+        <div class="service section" id="">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading"> 
+                        <h1>Objectives</h1>
+                        <div class="content-container">
+                            <p class="text-type-center">
+                                • Understand the proper sequence and procedure for assembling computer hardware components, such as installing the motherboard, 
+                                storage devices, and power supply.
+                            </p>
+                            <p class="text-type-center">
+                                • Value the importance of following proper safety guidelines to prevent damage to components or injury during assembly through 
+                                a reflection essay.
+                            </p>
+                            <p class="text-type-center">
+                                • Assemble the motherboard, storage devices, power supply, and other hardware components into a computer case with accuracy 
+                                and efficiency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** OBJECTIVES END ***** -->
+        
+        <!-- ***** CONTENT START ***** -->
+        <div class="services section" id="">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading"> 
+                        <h1>Learning Content</h1>
+                        <div class="content-container">
+                            <p class="text-type-center">
+                                Assembling computer hardware is a crucial skill that requires knowledge of different components, their functions, and the proper procedures 
+                                to ensure system compatibility and stability. Selecting the right components and following safety precautions are essential in building a 
+                                functional computer. In this lesson, you will learn about the key hardware components, step-by-step assembly, and best practices to avoid 
+                                damage and ensure optimal performance.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ***** Preparation and Safety Measures ***** -->
+                    <div class="section fun-facts">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="wrapper">
+                                        <div class="section-heading"> 
+                                            <h1 class="content-header-w">Preparetion And Safety Measures</h1>
+                                            <div class="content-container">
+                                                <ol class="content-body-w">
+                                                    <li>1. <strong>Unplug Everything</strong> – Always disconnect the power before opening a computer.</li>
+                                                    <li>2. <strong>Ground Yourself</strong> – Wear an anti-static wrist strap or touch metal to prevent static damage.</li>
+                                                    <li>3. <strong>Work on a Clean Surface</strong> – Use a non-conductive table to avoid short circuits.</li>
+                                                    <li>4. <strong>Handle Components Properly</strong> – Hold parts by the edges, not the circuits.</li>
+                                                    <li>5. <strong>Use the Right Tools</strong> – A Phillips screwdriver is usually enough; avoid using magnetized tools.</li>
+                                                    <li>6. <strong>Keep Cables Organized</strong> – Prevent clutter and tripping hazards.</li>
+                                                    <li>7. <strong>Avoid Liquid and Heat Exposure</strong> – Keep drinks away and don’t work near direct sunlight.</li>
+                                                    <li>8. <strong>Check Compatibility</strong> – Ensure all parts are compatible before assembly.</li>
+                                                    <li>9. <strong>Secure Connections</strong> – Make sure RAM, CPU, and other components are firmly in place.</li>
+                                                    <li>10. <strong>Test Before Closing</strong> – Power on briefly to check if everything works before sealing the case.</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ***** Parts of the Computer ***** -->
+            <div class="service section" id="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="section-heading">
+                                <h1 class="content-header-bl">Parts of the Computer</h1>
+                                <p class="content-body-bl" style="font-weight:400;">
+                                    Properly handling and installing these components ensures system stability and longevity. Together, a well-planned assembly process and 
+                                    understanding of task complexity contribute to efficient and successful computer building.
+                                </p>
+                                <h3 class="content-header-bl" style="padding-top: 20px;">External Components</h3>
+                                
+                                <!-- TEXT HOLDER-->
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">1. Mouse</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            Mouse <strong>allows the user to move a pointer displayed on the monitor </strong>and experience a more intuitive interaction with the computer. 
+                                            A computer mouse can be wired or wireless. The latter obviously requires batteries. Optical mice of today allow for very accurate 
+                                            precision and smooth movement.
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/internal-component/mouse.png" alt="mouse">
+                                        <a class="pic-ref" href="https://pngimg.com/d/computer_mouse_PNG7700.png">https://pngimg.com/d/computer_mouse_PNG7700.png</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">2. Monitor</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            Monitor is <strong>another term for the display screen.</strong> The term monitor, however, usually refers to the entire box, whereas display screen 
+                                            can mean just the screen.	A monitor is what you use to visualize the graphics data sent from the computer’s graphics card. There 
+                                            are various types of monitors on the market.
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/internal-component/monitor.png" style="max-width: 400px;" alt="monitor">
+                                        <a class="pic-ref" href="https://pngimg.com/d/computer_mouse_PNG7700.png">https://pngimg.com/d/monitor_PNG101653.png</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">3. Keyboard</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            It is an input device; consisting of a set of typewriter- like keys that <strong> enables you to enter data into a computer.</strong>   
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/internal-component/keyboard.png" style="max-width: 400px;" alt="keyboard">
+                                        <a class="pic-ref" href="https://pngimg.com/d/computer_mouse_PNG7700.png">https://surl.li/ehstqc</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">4.	Automatic Voltage Regulator</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            It <strong> protects the computer from changes in the electricity</strong> that may damage the computer components. 
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/internal-component/avr.png" alt="Automatic Voltage Regulator">
+                                        <a class="pic-ref" href="https://nutnullpc.com/images/thumbs/0002121_secure-avr_600.png">https://nutnullpc.com/images/thumbs/0002121_secure-avr_600.png</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">5. System Unit</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            It serves as a <strong>container of the computer’s internal parts</strong> (motherboard, CPU, etc.)
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/internal-component/system-unit.png" alt="System Unit">
+                                        <a class="pic-ref" href="https://nutnullpc.com/images/thumbs/0002121_secure-avr_600.png">https://www.pngmart.com/files/6/Computer-System-PNG-Photo.png</a>
+                                    </div>
+                                </div>
+                                <h3 class="content-header-bl" style="padding-top: 20px;">Internal Components</h3>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">1.	Power Supply Unit</h4>
+                                        </div>
+                                        <div class="text-type-content">
+                                            <p class="text-type-content">
+                                                The power supply unit in a computer <strong> converts the power from the wall outlet to the type of power needed by the computer. </strong> A power supply also comes 
+                                                with its own cooling fan. This helps all the internal components to stay cool. when the power supply is subjected to bigger loads.
+                                            </p>
+                                            <h5 class="text-type-content-header">Examples of PSU Ratings:</h5>
+                                            <p class="text-type-content">
+                                                <strong>•	80 Plus Bronze, Silver, Gold, Platinum</strong> – Efficiency ratings that determine energy consumption.
+                                            </p>
+                                            <p class="text-type-content">
+                                                <strong>•	Modular vs. Non-Modular</strong>  – Modular PSUs allow detachable cables for better cable management.
+                                            </p>
+                                        </div>
+                                        
+                                        <img  class="content-pic" style="max-width: 400px; max-height: 250px;" src="assets/images/internal-component/power-supply.png" alt="Power Supply">
+                                        <a class="pic-ref" style="color: black;" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Ffreepng%2Fcomputer-power-supply-unit-on-photo_14019214.html&psig=AOvVaw3C0pYxgdxQDHYGEub1Re17&ust=1743062351818000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJipj6Sjp4wDFQAAAAAdAAAAABAE">https://surl.li/jrleqe</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">2. Hard Disk Drive</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            The <strong>hard drive is long-term storage</strong>, which means the data is still saved even if you turn the computer off or unplug it. A hard drive is found on most computers. It’s
+                                            usually a mechanical drive that stores all the data. Apart from storing data, it can also be used as a boot drive to run the operating system from it.
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/internal-component/hdd.png" alt="Hard Disk Drive">
+                                        <a class="pic-ref" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpurepng.com%2Fphoto%2F5255%2Fcomputer-hard-disk-drive&psig=AOvVaw1JEwbK_klokSm2S_LJx63o&ust=1743062677721000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPiBiMCkp4wDFQAAAAAdAAAAABAP">https://surl.li/rfzaxy</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">3.	Optical Disc Drive</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            <strong>It reads or writes data </strong>into optical discs (CD, DVD, Blu-ray Disc).
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/internal-component/odd.jpg" alt="Optical Disc Drive">
+                                        <a class="pic-ref" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pixelsquid.com%2Fpng%2Fcd-rom-2895185304942024131&psig=AOvVaw2IMW1OPrfgKwqQ8Zm6amQX&ust=1743162854617000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMjvhtiZqowDFQAAAAAdAAAAABAQ">https://rb.gy/jbb0rj</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">4. Random Access Memory</h4>
+                                        </div>
+                                        <div class="text-type-content">
+                                            <p class="text-type-content">
+                                                RAM is a data storage device that can provide fast read and write access. RAM is your system's short-term memory. This <strong>short- term memory</strong> disappears when the computer is turned off.
+                                            </p>
+                                            <h5 class="text-type-content-header">Examples of RAM Types:</h5>
+                                            <p class="text-type-content">
+                                                <strong>•	DDR4/DDR5</strong> – Different generations with varying speeds and efficiency.
+                                            </p>
+                                            <p class="text-type-content">
+                                                <strong>•    DIMM (Desktop) vs. SO-DIMM (Laptop) </strong>  – Form factors for different systems.
+                                            </p>
+                                            <p class="text-type-content">
+                                                <strong>•   ECC RAM </strong>  – Error-correcting memory used in servers and workstations
+                                            </p>
+                                        </div>
+                                        
+                                        <img  class="content-pic" style="max-width: 400px; max-height: 200px;" src="assets/images/internal-component/ram.jpg" alt="Random Access Memory">
+                                        <a class="pic-ref" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngegg.com%2Fen%2Fsearch%3Fq%3Drandom%2BAccess%2BMemory&psig=AOvVaw2AsHtGX--OW-ec5am_E2to&ust=1743234719060000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKi_qbSlrIwDFQAAAAAdAAAAABAE">https://shorturl.at/SgJnL</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">5. Central Processing Unit</h4>
+                                        </div>
+                                        <div class="text-type-content">
+                                            <p class="text-type-content">
+                                                Also called a processor, it is sometimes called <strong>the brain of the computer</strong>, and its job is to carry out commands. It takes information from the RAM 
+                                                and processes it to perform the tasks required from the computer.
+                                            </p>
+                                            <h5 class="text-type-content-header">Examples of CPU Features:</h5>
+                                            <p class="text-type-content">
+                                                <strong>•	Cores and Threads </strong> – Determines multitasking capabilities and speed.
+                                            </p>
+                                            <p class="text-type-content">
+                                                <strong>•    Clock Speed (GHz) </strong>  – The speed at which the CPU processes information.
+                                            </p>
+                                        </div>
+                                        <img  class="content-pic" style="max-height: 150px;" src="assets/images/internal-component/cpu.jpg" alt="Central Processing Unit">
+                                        <a class="pic-ref" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Fphoto%2F17015184-the-micro-elements-of-computer-central-processor-unit-cpu-contact-pins&psig=AOvVaw1wvWhG9C8QX0IYokt_1NgV&ust=1743240887402000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLiT3LG8rIwDFQAAAAAdAAAAABAE">https://shorturl.at/SvTOb</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">6.	CPU Fan and Heatsink</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            These two components work together in keeping the CPU from overheating.
+                                        </p>
+                                        <img  class="content-pic" style="max-width: 400px; max-height: 400;" src="assets/images/internal-component/fan-heatsink.webp" alt="CPU Fan and Heatsink">
+                                        <a class="pic-ref" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.makotekcomputers.com%2Fproducts%2Fsumond-am4-cpu-desktop-heatsink-cooling-fan&psig=AOvVaw34UkECF_EHp8fYf4icI81q&ust=1743239549829000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLjh7LK3rIwDFQAAAAAdAAAAABAE">https://shorturl.at/tK9CF</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">7. System Fan</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            This is found at the left side panel and the back panel of the system unit. It directs the flow of air in the system    unit.
+                                        </p>
+                                        <img  class="content-pic" style="max-width: 400PX;" src="assets/images/internal-component/fan.jpg" alt="System Fan">
+                                        <a class="pic-ref" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pixelsquid.com%2Fpng%2Fpc-fan-black-2808956926879077401&psig=AOvVaw1NaAVZWhPFymCTIngzd2I_&ust=1743239079240000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIj2w9O1rIwDFQAAAAAdAAAAABAE">https://shorturl.at/2y2k2</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">8.	Motherboard</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            It is the computer's main circuit board. It's a thin plate that holds the CPU, memory, connectors for the hard drive and optical 
+                                            drives, expansion cards to control the video and audio, and connections to your computer's ports (such as USB ports).
+                                        </p>
+                                        <img  class="content-pic" style="max-width: 400px;" src="assets/images/internal-component/motherboard.jfif" alt="Motherboard">
+                                        <a class="pic-ref" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fsimilarpng.com%2Fblack-asus-motherboard-on-transparent-background-png-3%2F&psig=AOvVaw2STteYL-g8Bhluo_Jx1YIe&ust=1743239234349000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKi4hJy2rIwDFQAAAAAdAAAAABAE">https://shorturl.at/Uw44E</a>
+                                    </div>
+                                </div>
+                                <h1 class="content-header-bl">Parts of the Motherboard</h1>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">1. Exapnsion Slot</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            An expansion slot on a motherboard is a socket that allows users to add additional hardware to their computer. 
+                                            Expansion slots are also known as bus slots or expansion ports.
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/motherboard-pic/expansion-slot.png" alt="Expansion Slot">
+                                        <a class="pic-ref" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.servethehome.com%2Fasus-z9ped8-ws-dual-xeon-e52600-workstation-motherboard-review%2Fasus-z9pe-d8-ws-pcie-expansion-slots%2F&psig=AOvVaw0Yd9FDKlkVGxz29MyAu1xt&ust=1743241166130000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPDMj7a9rIwDFQAAAAAdAAAAABAE">https://shorturl.at/0L9BL</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">2. RAM Slot</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            A RAM slot, also known as a memory slot, is a physical connector on a motherboard that holds Random Access Memory (RAM) modules.
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/motherboard-pic/ram-slot.png" alt="RAM Slot">
+                                        <a class="pic-ref" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fslots-put-ram-computer&psig=AOvVaw0omGOyWHzHI_eZsYW8xLZl&ust=1743241281487000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNC9__69rIwDFQAAAAAdAAAAABAE">https://shorturl.at/yIvAV</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">3.	Northbridge and Southbridge</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            Northbridge coordinates the flow of data between the CPU, graphics card, and RAM. Southbridge is located below the expansion slots; the Southbridge 
+                                            handles all the computer’s input/output functions.
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/motherboard-pic/northbridge-southbridge.jpeg" alt="Northbridge and Southbridge">
+                                        <a class="pic-ref" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fsrgtech78.wordpress.com%2F2019%2F01%2F25%2Fnorth-and-south-bridges-of-a-motherboard-explained%2F&psig=AOvVaw2oJHKhDxff413RhcTe7Iip&ust=1743241507392000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJicnte-rIwDFQAAAAAdAAAAABAE">https://shorturl.at/0bP9d</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">4.	BIOS Chip</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            A BIOS chip, or Basic Input/Output System chip, is a small memory chip on a motherboard that contains software 
+                                            that initializes hardware and runs when a computer starts.
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/motherboard-pic/BIOS-chip.jfif" alt="BIOS Chip">
+                                        <a class="pic-ref" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.learncomputerscienceonline.com%2Fbios%2F&psig=AOvVaw2k4SsPx6ZfB3JqTxcIPldK&ust=1743241618581000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCyyZC_rIwDFQAAAAAdAAAAABAE">https://rb.gy/m3cpef</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">5. CMOS RAM</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            CMOS RAM, or Complementary Metal-Oxide-Semiconductor RAM, is a small amount of memory on a motherboard that
+                                            stores the computer's BIOS settings. The CMOS RAM is powered by a CMOS battery.
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/motherboard-pic/CMOS-RAM.webp" alt="CMOS RAM">
+                                        <a class="pic-ref" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.arcadeshop.com%2Fi%2F1738%2F5101-ram.htm&psig=AOvVaw30Roik9yCyyOWEerxeBY5I&ust=1743241749874000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCICc9NS_rIwDFQAAAAAdAAAAABAZ">https://rb.gy/i7orm5</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">6. CMOS Battery</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            It provides the power used by the CMOS RAM so that even when the computer is off, 
+                                            the CMOS RAM can keep data (this means time and date will not be reset).
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/motherboard-pic/CMOS-Battery.png" alt="CMOS Battery">
+                                        <a class="pic-ref" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.asus.com%2Fph%2Fsupport%2Ffaq%2F1005740%2F&psig=AOvVaw170cQTfdFR4JJ1dCA7lnpZ&ust=1743241900944000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMDOr5bArIwDFQAAAAAdAAAAABAE">https://rb.gy/l24ted</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">7.	Back Panel Ports</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            Refers to the various connection points located on the rear side of a computer or electronic device, allowing you to plug in external 
+                                            peripherals like monitors, keyboards, speakers, USB drives, and more.
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/motherboard-pic/back-panel.jpg" alt="Back Panel Ports">
+                                        <a class="pic-ref" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alamy.com%2Fstock-photo%2Fback-panel-connectors.html&psig=AOvVaw1FUh1lWESQn8zKEDA2dw41&ust=1743242011373000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPDKg83ArIwDFQAAAAAdAAAAABAJ">https://rb.gy/i7emhm</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">8.	Front Panel Headers</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            It is mostly located at the left and front side of the motherboard. Most computers have three front panel
+                                            headers: system panel headers, audio headers, USB headers.
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/motherboard-pic/front-panel-header.jpg" alt="Front Panel Headers">
+                                        <a class="pic-ref" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fsuperuser.com%2Fquestions%2F692797%2Ffront-panel-pins-not-identified-on-motherboard-acer-rs740dvf&psig=AOvVaw12qG4udjx-35EXapJtbR_X&ust=1743242197289000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIiNkKLBrIwDFQAAAAAdAAAAABAE">https://tinyurl.com/484mcut5</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">9.	CPU Socket</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            It is where the CPU is installed. CPU socket connects a CPU to a motherboard with pins that can be replaced.
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/motherboard-pic/cpu-socket.jpg" alt="CPU Socket">
+                                        <a class="pic-ref" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alamy.com%2Fstock-photo%2Fcpu-socket.html&psig=AOvVaw2f92Af_WxIb8NIeyxtMTEh&ust=1743242434583000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNis_5TCrIwDFQAAAAAdAAAAABAJ">https://shortlink.uk/Vt3k</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">10.	24 Pin ATX Main Power Connector</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            It is where the 20+4 Pin ATX Main Power Connector of the PSU is connected.
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/motherboard-pic/24-pin.avif" alt="24 Pin ATX Main Power Connector">
+                                        <a class="pic-ref" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.makeuseof.com%2Fcables-in-pc-power-supply-explained%2F&psig=AOvVaw0JsdJdxJtrFQuzKgAYohRz&ust=1743242536821000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCODDmMbCrIwDFQAAAAAdAAAAABAE">https://shortlink.uk/YhMA</a>
+                                    </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="row">
+                                        <div class="">
+                                            <h4 class="text-type-content-header">11.	4 Pin ATX 12V Power Connector</h4>
+                                        </div>
+                                        <p class="text-type-content">
+                                            It is where the 4 Pin ATX 12V Power Connector of the PSU is connected.  
+                                        </p>
+                                        <img  class="content-pic" src="assets/images/motherboard-pic/4-pin.jpg" alt="4 Pin ATX 12V Power Connector">
+                                        <a class="pic-ref" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lifewire.com%2Fatx-power-supply-pinout-tables-2624590&psig=AOvVaw0A-jWiHf39KQmlcK0jcN6S&ust=1743242942987000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJDbv4XErIwDFQAAAAAdAAAAABAE">https://shortlink.uk/YhQi</a>
+                                    </div>
+                                </div>
+                                <h1 class="content-header-bl">Step-by-Step Computer Assembly Process</h1>
+                                <img src="assets/images/lesson-1/step-by-step.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ***** ***** -->
+            <div>
+                
+            </div>
+            <!-- ***** CONTENT END ***** -->
+            
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+            
+            <div class="button-container">
+                <div class="main-button-a">
+                    <a href="index.html"><i class="fas fa-arrow-left"></i> Back</a>
+                </div> 
+                
+                <div class="main-button-b">
+                    <a href="lesson1-activity.html">Next <i class="fas fa-arrow-right"></i></a>
+                </div> 
+            </div>
+            
+            
+            <footer>
+                <div class="container">
+                    <div class="col-lg-12">
+                        <p>Copyright © 2025 Technological University of the Philippines - Taguig. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a href="https://templatemo.com" rel="nofollow" target="_blank">TemplateMo</a></p>
+                    </div>
+                </div>
+            </footer>
+            
+            
+            
+            <!-- Scripts -->
+            <!-- Bootstrap core JavaScript -->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+            <script src="assets/js/isotope.min.js"></script>
+            <script src="assets/js/owl-carousel.js"></script>
+            <script src="assets/js/counter.js"></script>
+            <script src="assets/js/custom.js"></script>
+            
+        </body>
+        </html>
